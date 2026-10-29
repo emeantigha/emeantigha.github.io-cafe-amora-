@@ -244,23 +244,74 @@
 
 //resposive improvements for cafe amora 
 
+
+html{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 img{
     max-width: 100%;
-    height: auto;
 }
-@media screen and (max-width: 768px){
-    body {
-        margin: o;
+
+header,
+nav,
+section{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    html,
+    body{
         width: 100%;
+        min-width: 0;
+        overflow-x: hidden;
     }
-    h1 {
-        font-size: clamp(28px, 7vw, 40px);
-        line-height: 1.2;
+
+    header, 
+    nav,
+    section {
+        width: 100%;
+        max-width: 100%;
     }
-    h2 {
-        font-size: clamp(23px, 5vw, 32px);
+    img{
+        max-width: 100%;
     }
-    p{
-        line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p,
+a{
+    overflow-wrap: break-word;
+}
+    img{
+        height: auto
+    }
+.card{
+    grid-template-columns: repeat(4, minmax
+    (0, 1fr));
+    gap: 12px;
+}
+.cards-section,
+.card-div,
+.card {
+    min-width: 0;
+}
+
+@media screen and (max-width: 480px){
+    .card{
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
