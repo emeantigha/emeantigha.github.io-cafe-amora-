@@ -1,2 +1,2 @@
 # emeantigha.github.io-cafe-amora-
-A stylish ad responsive coffee shop website built with HTML, CSS and JavaScript, featuring the Café Amora brand 
+A stylish and responsive coffee shop website built with HTML, CSS and JavaScript, featuring the Café Amora brand, coffee selections, and a welcoming user experience.
